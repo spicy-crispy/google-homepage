@@ -10,20 +10,59 @@
             font-size: 14px;
             font-family: arial, sans-serif;
             color: #222;
-            text-align: center;
         }
-
-        .movedown {
+    /* google logo */
+        .googlecontainer {
         text-align: center;
-        margin-top: 250px;
+        margin-top: 23vh;
         max-height: 100%;
         max-width: 100%;
-        width: auto;
         }
+    /*search bar*/
+        .googlesearch { 
+            text-align: center;
+            margin-top: 3vh;    
+        }
+        #searchfield {
+            width: 500px;
+            height: 40px;
+            border: rgb(219, 219, 219) 1px solid;
+
+        }
+        #gesearch {
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            right: 0;
+            padding: 5px;
+        }
+        #feelinglucky {
+            position: absolute;
+            top: 45%;
+            left: 49.8%;
+            right: 0;
+            padding: 5px;
+        }
+        p{
+            position:relative;
+            top: 100px;
+            text-align: center;
+        }
+}
         
     </style>
 </head>
 <body>
-<img class="movedown" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div class="googlecontainer">
+        <img alt="Google" width="272px" height="92px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="googlesearch">
+        <form>
+            <input type="text" id="searchfield" name="search">
+            <input type="button" id= "gesearch" value="Google Search">
+            <input type="button" id="feelinglucky" value="I'm Feeling Lucky">
+        </form>
+    </div>
+    <p>I tried.</p>
 </body>
 </html>
