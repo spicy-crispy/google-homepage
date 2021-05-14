@@ -1,0 +1,13 @@
+body {
+       font-size: 14px;
+       font-family: arial, sans-serif;
+       color: #222;
+}
+
+/* google logo */
+   .googlecontainer {
+   align-items: center;
+   position: absolute;
+   top: 22%;
+   right: 43.5%;
+   }

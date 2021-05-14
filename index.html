@@ -4,65 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-size: 14px;
-            font-family: arial, sans-serif;
-            color: #222;
-        }
-    /* google logo */
-        .googlecontainer {
-        text-align: center;
-        margin-top: 23vh;
-        max-height: 100%;
-        max-width: 100%;
-        }
-    /*search bar*/
-        .googlesearch { 
-            text-align: center;
-            margin-top: 3vh;    
-        }
-        #searchfield {
-            width: 500px;
-            height: 40px;
-            border: rgb(219, 219, 219) 1px solid;
-
-        }
-        #gesearch {
-            position: absolute;
-            top: 45%;
-            left: 42%;
-            right: 0;
-            padding: 5px;
-        }
-        #feelinglucky {
-            position: absolute;
-            top: 45%;
-            left: 49.8%;
-            right: 0;
-            padding: 5px;
-        }
-        p{
-            position:relative;
-            top: 100px;
-            text-align: center;
-        }
-}
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Google</title>
 </head>
+
 <body>
-    <div class="googlecontainer">
-        <img alt="Google" width="272px" height="92px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </div>
-    <div class="googlesearch">
-        <form>
-            <input type="text" id="searchfield" name="search">
-            <input type="button" id= "gesearch" value="Google Search">
-            <input type="button" id="feelinglucky" value="I'm Feeling Lucky">
-        </form>
-    </div>
+
+    <ul class="header">
+        <li class="leftheader"><a href="https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li class="rightheader"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+    </ul>
+
+    <img id="logo" alt="Google" width="272px" height="92px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+         
+    <form>
+        <input type="text" id="searchfield" name="search">
+    </form>
+    
+    <button class="button" id="searchbutton">Google Search</button>
+    <button class="button" id="luckybutton">I'm Feeling Lucky</button>
+    
     <p>I tried.</p>
+
 </body>
 </html>
