@@ -4,10 +4,152 @@ body {
        color: #222;
 }
 
-/* google logo */
-   .googlecontainer {
-   align-items: center;
-   position: absolute;
-   top: 22%;
-   right: 43.5%;
-   }
+
+/* top navigation bar (messy tbh) */
+
+nav ul {
+       list-style-type: none;
+       padding: 5px;
+       display: flex;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+       min-width: 450px;
+
+}
+
+nav a {
+       text-decoration: none;
+       text-align: center;
+       color:black;
+       padding: 5px 15px;
+
+}
+
+nav a:hover {
+    text-decoration: underline !important;
+}
+
+/* right part of top navigation bar */
+
+nav ul.rightnav{
+    display: flex;
+    margin-right: 100px;
+    margin-top: -40px;
+    justify-content: flex-end;
+    right: 0;
+}
+
+a.apps {
+    background: url(img/googleapps.png) no-repeat center;
+    background-size: 80%;
+}
+
+nav ul.signin {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+ 
+}
+nav a.signin {
+    background-color:#1a73e8;
+    padding: 10px 23px !important;
+    border-radius: 5px; /*rounded corners*/
+    color: white;
+    width: 100px;
+}
+
+
+/* google image, searchbar, buttons */
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.googleimg {
+}
+
+.search {
+    padding: 5px 45px;
+    border: 1px solid #dfe1e5;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+
+.search:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+
+input {
+    width: 437px;
+    outline: none;
+    border: none;
+    height: 34px;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 3%;
+    padding: 0;
+}
+
+
+
+/* button styling */
+.button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 8px 15px;
+    height: 36px;
+    min-width: 54px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+
+/* bottom nav bar */
+
+.footercontainer{
+    display: flex;
+    position: fixed;
+    bottom: 0; 
+    background-color: #f2f2f2;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 25px 10px 20px 0px;
+}
+.footerleft{
+    display: flex;
+    justify-content: flex-start;
+}
+.footerright{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.bottomnav {
+    padding-left: 20px;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(95, 99, 104);
+}
+
+a:hover{
+    text-decoration: underline!important;
+}
+
